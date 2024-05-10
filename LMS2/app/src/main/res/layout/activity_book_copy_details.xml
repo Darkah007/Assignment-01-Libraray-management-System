@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".BookCopyDetailsActivity">
+
+        <!-- Book ID Input Field -->
+        <EditText
+            android:id="@+id/editTextBookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book ID"
+            android:inputType="text" />
+
+        <!-- Branch ID Input Field -->
+        <EditText
+            android:id="@+id/editTextBranchId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBookId"
+            android:layout_marginTop="16dp"
+            android:hint="Branch ID"
+            android:inputType="text" />
+
+        <!-- Access No Input Field -->
+        <EditText
+            android:id="@+id/editTextAccessNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBranchId"
+            android:layout_marginTop="16dp"
+            android:hint="Access No"
+            android:inputType="text" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAccessNo"
+            android:layout_marginTop="16dp"
+            android:text="Add" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="16dp"
+            android:text="Update" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonUpdate"
+            android:layout_marginTop="16dp"
+            android:text="Delete" />
+
+        <!-- List View to Display Records -->
+        <ListView
+            android:id="@+id/listViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonDelete"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

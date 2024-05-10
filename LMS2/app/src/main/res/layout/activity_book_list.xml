@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".BookListActivity">
+
+        <!-- Book ID Input Field -->
+        <EditText
+            android:id="@+id/editTextBookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book ID"
+            android:inputType="text" />
+
+        <!-- Title Input Field -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBookId"
+            android:layout_marginTop="16dp"
+            android:hint="Title"
+            android:inputType="text" />
+
+        <!-- Publisher Input Field -->
+        <EditText
+            android:id="@+id/editTextPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTitle"
+            android:layout_marginTop="16dp"
+            android:hint="Publisher"
+            android:inputType="text" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPublisher"
+            android:layout_marginTop="16dp"
+            android:text="Add" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="16dp"
+            android:text="Update" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonUpdate"
+            android:layout_marginTop="16dp"
+            android:text="Delete" />
+
+        <!-- List View to Display Records -->
+        <ListView
+            android:id="@+id/listViewBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonDelete"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

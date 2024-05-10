@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LendingDetailsActivity">
+
+    <EditText
+        android:id="@+id/etAccessNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Access No"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etBranchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAccessNo"
+        android:hint="Branch ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etCardNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBranchId"
+        android:hint="Card No"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDateOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCardNo"
+        android:hint="Date Out (yyyy-MM-dd)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDateDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDateOut"
+        android:hint="Date Due (yyyy-MM-dd)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDateReturned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDateDue"
+        android:hint="Date Returned (yyyy-MM-dd)"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAddLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDateReturned"
+        android:text="Add Loan" />
+
+    <Button
+        android:id="@+id/btnUpdateLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddLoan"
+        android:text="Update Loan" />
+
+    <Button
+        android:id="@+id/btnDeleteLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdateLoan"
+        android:text="Delete Loan" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteLoan"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
